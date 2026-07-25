@@ -5,7 +5,6 @@ public:
         vector<int> ans(temperatures.size(), 0);
         int i = temperatures.size() - 1;
         while (i >= 0) {
-
             while (!st.empty() && temperatures[st.top()] <= temperatures[i]) {
                 st.pop();
             }
